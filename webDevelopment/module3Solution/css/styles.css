@@ -60,6 +60,14 @@ body {
 /* END HEADER */
 
 /* HOME PAGE */
+#our-menu {
+  font-size: 35px;
+  padding-bottom: 25px;
+  margin-top: -10px;
+  color: #000000;
+  font-weight: bold;
+}
+
 #chicken-tile, #beef-tile, #sushi-tile {
   position: relative;
   width: 100%;
