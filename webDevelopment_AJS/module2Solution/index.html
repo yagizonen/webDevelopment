@@ -32,7 +32,7 @@
             <ul>
                 <li ng-repeat="item in boughtList.items">
                     Buy {{item.quantity}} {{item.name}}
-                    <button class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Bought</button>
+                    <button class="btn btn-default" disabled><span class="glyphicon glyphicon-ok"></span> Bought</button>
                     <button class="btn btn-default" ng-click="boughtList.removeItem($index);">Remove</button>
                 </li>
             </ul>
