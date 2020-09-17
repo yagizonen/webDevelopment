@@ -1,0 +1,7 @@
+<div class="loader"></div>
+<ul>
+   <li ng-repeat="item in controller.menuItems">
+       <a href="" ng-click="controller.logMenuItems(item.short_name);">({{ item.short_name }})</a> {{ item.name }}
+       <button ng-click="controller.onRemove({index: $index});">Don't want this one!</button>
+   </li>
+</ul>

@@ -17,8 +17,9 @@
         <!-- To Buy List -->
         <div class="col-md-6" ng-controller="ToBuyController as buyList">
             <h2>To Buy:</h2>
+            <p><input type="text" placeholder="Search" ng-model="searchFilter"></p>
             <ul>
-                <li ng-repeat="item in buyList.items">
+                <li ng-repeat="item in buyList.items | filter : searchFilter">
                     Buy {{item.quantity}} {{item.name}}
                     <button class="btn btn-default" ng-click="buyList.removeItem($index);"> Buy</button>
                 </li>
@@ -29,8 +30,9 @@
         <!-- Already Bought List -->
         <div class="col-md-6" ng-controller="AlreadyBoughtController as boughtList">
             <h2>Already Bought:</h2>
+            <p><input type="text" placeholder="Search" ng-model="searchFilter"></p>
             <ul>
-                <li ng-repeat="item in boughtList.items">
+                <li ng-repeat="item in boughtList.items | filter : searchFilter">
                     Buy {{item.quantity}} {{item.name}}
                     <button class="btn btn-default" disabled><span class="glyphicon glyphicon-ok"></span> Bought</button>
                     <button class="btn btn-default" ng-click="boughtList.removeItem($index);">Remove</button>
