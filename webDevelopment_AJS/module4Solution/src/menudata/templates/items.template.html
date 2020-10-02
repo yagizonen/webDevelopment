@@ -1,5 +1,6 @@
-<ul>
-  <li ng-repeat="item in $ctrl.data">
-    {{ item.name }}: {{ item.description }}
-  </li>
-</ul>
+<div class="box" ng-repeat="item in $ctrl.data">
+  <h3>{{item.name}}</h3>
+      <div><strong>Description:</strong> {{item.description}}</div>
+      <div><strong>Price small:</strong> {{item.price_small}}</div>
+      <div><strong>Price large:</strong> {{item.price_large}}</div>
+</div>

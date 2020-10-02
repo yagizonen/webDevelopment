@@ -30,7 +30,7 @@ function MenuDataService($http, ApiBasePath){
         })
         .then(function (result) {
             //console.log("categories.getItemsForCategory: ", result.data.menu_items);
-            return result.data.menu_items;
+            return result.data;
         })
         .catch(function (error) {
             console.log("something is not right");

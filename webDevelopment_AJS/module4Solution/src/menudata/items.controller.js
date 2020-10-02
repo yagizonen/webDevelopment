@@ -7,7 +7,9 @@ angular.module('Data')
 CategoryItemsController.$inject = ['MenuDataService', 'cItems'];
 function CategoryItemsController(MenuDataService, cItems) {
   var categoryItems = this;
-  categoryItems.items = cItems;
+  categoryItems.categoryShortName=cItems.category.short_name;
+  categoryItems.categoryName=cItems.category.name;
+  categoryItems.items = cItems.menu_items;
 }
 
 })();

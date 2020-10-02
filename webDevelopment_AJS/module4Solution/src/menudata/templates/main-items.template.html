@@ -1,4 +1,4 @@
-<a ui-sref="home">Home</a> &lt; <a ui-sref="categories">Categories</a> &lt; <span>Category Items</span>
+<a ui-sref="home">Home</a> &lt; <a ui-sref="categories">Categories</a> &lt; <span>{{categoryItems.categoryName}}({{categoryItems.categoryShortName}})</span>
 
-<h3>Category Items</h3>
+<h3>Category Items for <span class="red">{{categoryItems.categoryName}}({{categoryItems.categoryShortName}})</span></h3>
 <items data="categoryItems.items"></items>
