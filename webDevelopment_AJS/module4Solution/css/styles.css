@@ -10,8 +10,10 @@ body {
 
 .loading-icon {
   position: absolute;
-  left: 50%;
-  top: 10px;
+  left: 45%;
+  top: 25%;
+  width: 10%;
+  height: auto;
 }
 
 li[ui-sref]:hover {
