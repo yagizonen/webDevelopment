@@ -7,7 +7,6 @@
                ng-model="signCtrl.user.firstname"
                required
                 ng-maxlength="20">
-        {{signCtrl.user.firstname}}
         <span ng-if="regForm.firstname.$error.required && regForm.firstname.$touched">
                     First name cannot be empty.
                 </span>
@@ -19,7 +18,6 @@
                ng-model="signCtrl.user.lastname"
                required
                ng-maxlength="20">
-        {{signCtrl.user.lastname}}
         <span ng-if="regForm.lastname.$error.required && regForm.lastname.$touched">
                     Last name cannot be empty.
         </span>
