@@ -1,0 +1,23 @@
+<h1 class="text-center">User info</h1>
+
+<div id="infosp" ng-hide="infoCtrl.show" class="text-center">
+    Not Signed Up Yet. <button><a ui-sref="public.register">Sign up Now!</a></button>
+</div>
+
+<div class="userInfo" ng-if="infoCtrl.show">
+    First Name: {{infoCtrl.info[0].firstname}} <br>
+    Last Name: {{infoCtrl.info[0].lastname}} <br>
+    Email: {{infoCtrl.info[0].email}} <br>
+    Phone: {{infoCtrl.info[0].phone}} <br>
+    Favourite Dish: {{infoCtrl.info[0].favData.short_name}}
+    <div class="userInfo">
+        <div>
+            <img class="img-responsive" width="500" height="300" ng-src="{{infoCtrl.info[0].apiPath}}/images/{{infoCtrl.info[0].favData.short_name}}.jpg" alt="{{infoCtrl.info[0].favData.name}}">
+        </div>
+        <div>
+            <div>{{infoCtrl.info[0].favData.name}}</div>
+            <p>{{infoCtrl.info[0].favData.description}}</p>
+        </div>
+    </div>
+
+</div>

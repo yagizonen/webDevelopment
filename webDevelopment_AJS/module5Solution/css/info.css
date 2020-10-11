@@ -1,0 +1,41 @@
+input {
+    font-size: 28px;
+    margin-bottom: 10px;
+    width: 500px;
+    color: black;
+    border-radius: 7px;
+}
+button {
+    font-size: 24px;
+    color: black;
+}
+.ng-touched.ng-valid {
+    border: 2px green solid;
+}
+.ng-touched.ng-invalid {
+    border: 2px red solid;
+}
+#info {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#infosp {
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.registration {
+    font-size: 30px;
+    color: white;
+}
+
+fieldset{
+    margin-left: 10px;
+}
+
+.userInfo{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+}
